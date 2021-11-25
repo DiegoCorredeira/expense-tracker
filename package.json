@@ -18,6 +18,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+  "homepage": "https://diegocorredeira.github.io/expense-tracker",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
