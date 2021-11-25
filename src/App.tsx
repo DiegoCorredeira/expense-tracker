@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import * as C from './App.styles'
+import { Item } from './types/item';
+import { Category } from './types/Category';
+import { categories } from './data/categories';
+import { items } from './data/items';
+import { getCurrentMonth } from './helpers/dateFilter';
 
 const App = () => {
+  const [list, setList] = useState(items);
+  const [currentMonth, setCurrentMonth] = useState(getCurrentMonth())
+
   return (
     <C.Container>
       <C.Header>
@@ -9,7 +18,7 @@ const App = () => {
       <C.Body>
         {/* área de informações */}
 
-        
+
 
         {/* área de inserção */}
 
